@@ -1,7 +1,8 @@
 ---
 tags: [fullstack-agent, sistema-multi-agente, claude, time-dev, engenharia]
-versao: "2.0.0"
+versao: "2.1.0"
 criado: 2026-05-14
+atualizado: 2026-05-29
 ---
 
 # Fullstack Agent System
@@ -24,7 +25,8 @@ Fullstack Agent System/
 │   ├── Frontend-Dev.md     ← Facet: UI/UX, React/Vue, a11y (sonnet-4-6)
 │   ├── Infra-Cloud.md      ← Bastion: AWS, Terraform, CI/CD (sonnet-4-6)
 │   ├── Data-AI.md          ← Neuron: ML, ETL, LLMs, RAG (opus-4-7)
-│   └── Security.md         ← Sentinel: AppSec, OWASP, compliance (opus-4-7)
+│   ├── Security.md         ← Sentinel: AppSec, OWASP, compliance (opus-4-7)
+│   └── Forge.md            ← Forge: 5E code quality, scoring, refactoring (sonnet-4-6)
 ├── docs/
 │   ├── Constitution.md     ← 6 principles that govern all agents
 │   ├── Agent-Model-Map.md  ← Routing: activity → model → agent
@@ -46,6 +48,7 @@ Fullstack Agent System/
 | Bastion | — | IaC, CI/CD, observability | Dockerfiles, YAML, runbooks |
 | Neuron | RAG architecture, ML design | ETL, analysis, features | Reports, docstrings |
 | Sentinel | Threat modeling, compliance | Code review, IAM | Headers, configs, checklists |
+| Forge | — | 5E quality review, refactoring | Score reports, findings |
 
 **Estimated savings: ~60–75% vs. using Opus for everything.**
 
@@ -107,6 +110,7 @@ Maestro reads progress.md
       ├─→ Facet (UI, components, a11y)
       ├─→ Bastion (IaC, CI/CD, deploy)
       ├─→ Neuron (pipelines, ML, RAG)
+      ├─→ Forge (5E quality review before merge)
       └─→ Sentinel (mandatory review on auth/data/infra)
           ↓
       Each specialist delivers:
