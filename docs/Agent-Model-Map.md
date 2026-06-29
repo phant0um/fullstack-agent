@@ -13,10 +13,10 @@ Routing by activity type to maximize quality and minimize token cost.
 
 | Activity | Model | Agent |
 |---|---|---|
-| Planning and decomposition of complex requirements | claude-opus-4-7 | Maestro |
-| Threat modeling, Zero Trust, compliance analysis | claude-opus-4-7 | Sentinel |
-| RAG system design, data architecture | claude-opus-4-7 | Neuron |
-| Critical security review (auth/data/infra) | claude-opus-4-7 | Sentinel |
+| Planning and decomposition of complex requirements | claude-opus-4-8 | Maestro |
+| Threat modeling, Zero Trust, compliance analysis | claude-opus-4-8 | Sentinel |
+| RAG system design, data architecture | claude-opus-4-8 | Neuron |
+| Critical security review (auth/data/infra) | claude-opus-4-8 | Sentinel |
 | REST/GraphQL API implementation | claude-sonnet-4-6 | Stratum |
 | Database modeling and migrations | claude-sonnet-4-6 | Stratum |
 | Legacy code refactoring | claude-sonnet-4-6 | Stratum |
@@ -49,7 +49,7 @@ Routing by activity type to maximize quality and minimize token cost.
 ## Decision rule
 
 ```
-if    complex systemic reasoning, high impact, threat modeling  → opus-4-7
+if    complex systemic reasoning, high impact, threat modeling  → opus-4-8
 elif  code generation, technical analysis, architecture design  → sonnet-4-6
 elif  known pattern, output < 500 tokens, repetitive config    → haiku-4-5
 else                                                            → sonnet-4-6
@@ -59,6 +59,6 @@ else                                                            → sonnet-4-6
 
 | Tier | Model ID | Use |
 |---|---|---|
-| Opus | claude-opus-4-7 | Architectural decisions, critical security, AI/data |
+| Opus | claude-opus-4-8 | Architectural decisions, critical security, AI/data |
 | Sonnet | claude-sonnet-4-6 | General implementation, code, analysis |
 | Haiku | claude-haiku-4-5-20251001 | Repetitive tasks, docs, simple configs |

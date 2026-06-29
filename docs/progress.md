@@ -16,7 +16,7 @@ ciclo: 1
 - System built from scratch: 6 agents (Orchestrator + 5 specialists)
 - Models updated: opus-4-7, sonnet-4-6, haiku-4-5-20251001
 - Nexus format adopted: YAML frontmatter + File-as-Bus
-- Constitution, Agent-Model-Map, Standards-Anti-Patterns created
+- Constitution, agent-model-map, standards-anti-patterns created
 - ADR template created
 - README created
 

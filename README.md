@@ -18,19 +18,18 @@ A senior engineering team composed of 6 specialized agents, orchestrated by a ce
 ## Structure
 
 ```
-Fullstack Agent System/
-├── 00-SYSTEM-PROMPTS/
-│   ├── Orchestrator.md     ← Maestro: central planner (opus-4-7)
-│   ├── Backend-Dev.md      ← Stratum: APIs, DB, microservices (sonnet-4-6)
-│   ├── Frontend-Dev.md     ← Facet: UI/UX, React/Vue, a11y (sonnet-4-6)
-│   ├── Infra-Cloud.md      ← Bastion: AWS, Terraform, CI/CD (sonnet-4-6)
-│   ├── Data-AI.md          ← Neuron: ML, ETL, LLMs, RAG (opus-4-7)
-│   ├── Security.md         ← Sentinel: AppSec, OWASP, compliance (opus-4-7)
-│   └── Forge.md            ← Forge: 5E code quality, scoring, refactoring (sonnet-4-6)
+fullstack-agent-system/
+├── Orchestrator.md     ← Maestro: central planner (opus-4-8)
+├── Backend-Dev.md      ← Stratum: APIs, DB, microservices (sonnet-4-6)
+├── Frontend-Dev.md     ← Facet: UI/UX, React/Vue, a11y (sonnet-4-6)
+├── Infra-Cloud.md      ← Bastion: AWS, Terraform, CI/CD (sonnet-4-6)
+├── Data-AI.md          ← Neuron: ML, ETL, LLMs, RAG (opus-4-8)
+├── Security.md         ← Sentinel: AppSec, OWASP, compliance (opus-4-8)
+├── Forge.md            ← Forge: 5E code quality, scoring, refactoring (sonnet-4-6)
 ├── docs/
 │   ├── Constitution.md     ← 6 principles that govern all agents
-│   ├── Agent-Model-Map.md  ← Routing: activity → model → agent
-│   ├── Standards-Anti-Patterns.md
+│   ├── agent-model-map.md  ← Routing: activity → model → agent
+│   ├── standards-anti-patterns.md
 │   └── progress.md         ← System state (File-as-Bus)
 └── adr/
     └── 0000-template.md    ← Template for Architecture Decision Records
@@ -40,7 +39,7 @@ Fullstack Agent System/
 
 ## Model Map
 
-| Agent | opus-4-7 | sonnet-4-6 | haiku-4-5 |
+| Agent | opus-4-8 | sonnet-4-6 | haiku-4-5 |
 |---|---|---|---|
 | Maestro | Complex planning | — | — |
 | Stratum | — | APIs, DB, auth, refactoring | Tests, docs, seeds |
@@ -60,12 +59,12 @@ Fullstack Agent System/
 
 ```bash
 # Activate Maestro as project CLAUDE.md
-cp 00-SYSTEM-PROMPTS/Orchestrator.md ./CLAUDE.md
+cp Orchestrator.md ./CLAUDE.md
 
 # Specialist agent for a specific repository
-cp 00-SYSTEM-PROMPTS/Backend-Dev.md ./CLAUDE.md     # backend repo (Stratum)
-cp 00-SYSTEM-PROMPTS/Frontend-Dev.md ./CLAUDE.md    # frontend repo (Facet)
-cp 00-SYSTEM-PROMPTS/Infra-Cloud.md ./CLAUDE.md     # infra repo (Bastion)
+cp Backend-Dev.md ./CLAUDE.md     # backend repo (Stratum)
+cp Frontend-Dev.md ./CLAUDE.md    # frontend repo (Facet)
+cp Infra-Cloud.md ./CLAUDE.md     # infra repo (Bastion)
 ```
 
 ### Conditional rules by path

@@ -99,3 +99,19 @@ Icons:       Lucide React, Phosphor Icons
 - ❌ `any` in TypeScript
 - ❌ `!important` without a justifying comment
 - ❌ Click events on non-interactive elements without `role` and `tabIndex`
+
+## Fora do Escopo
+- APIs e backend (→ Stratum)
+- Infraestrutura e deploy (→ Bastion)
+- ML/AI pipelines (→ Neuron)
+- Security review (→ Sentinel)
+
+## Critério de Qualidade
+- Componente renderiza em mobile e desktop
+- Acessibilidade: ARIA labels, contraste, keyboard navigation
+- Sem `any` em TypeScript sem justificativa
+- Evidence com screenshot ou Storybook story
+
+## Exemplo
+**Input:** "Criar componente de pricing cards responsivo"
+**Output:** `PricingCard.tsx` + `PricingCard.test.tsx` + Storybook story. Evidence: screenshots mobile/desktop, ARIA audit limpo.

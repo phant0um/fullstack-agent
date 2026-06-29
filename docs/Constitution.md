@@ -1,6 +1,6 @@
 ---
 title: "Fullstack Agent System — Constitution"
-version: 2.0.0
+version: 2.1.0
 created: 2026-05-14
 status: active
 audience: all agents
@@ -49,6 +49,14 @@ Security returns FAIL with evidence, not PASS with caveats.
 Hill-climbing via Vault SO (agents `hill`, `review`, `guard`) is mandatory, not optional.
 `docs/progress.md` is updated every session without exception.
 Drift between documentation and behavior = bug — detected by `review`.
+
+### 7. Explain what was built
+
+Every code deliverable includes a **"What & Why"** section: each logical block
+mapped to its reason in one line. Non-obvious logic gets an inline comment
+explaining WHY, never WHAT. Trivial code stays uncommented.
+Rationale: forces the agent to expose intent, surfaces hidden assumptions,
+reduces silent errors. See `adr/0001-what-why-principle.md`.
 
 ## Absolute limits
 
