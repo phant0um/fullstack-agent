@@ -1,3 +1,13 @@
+# ⚠️ DEPRECATED — this repo is archived
+
+Consolidated into a single agents monorepo:
+
+**→ [phant0um/claude-agent-dev](https://github.com/phant0um/claude-agent-dev)** — updated version lives in [`fullstack-agent-system/`](https://github.com/phant0um/claude-agent-dev/tree/main/fullstack-agent-system). `/plugin` installable, MIT.
+
+Skills moved to [phant0um/claude-skills](https://github.com/phant0um/claude-skills).
+
+---
+
 ---
 tags: [fullstack-agent, sistema-multi-agente, claude, time-dev, engenharia]
 versao: "2.1.0"
